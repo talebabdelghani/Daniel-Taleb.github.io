@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Taleb | Portfolio Informatique & Ingénierie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .glass-nav { 
+            background: rgba(255, 255, 255, 0.8); 
+            backdrop-filter: blur(20px); 
+            border-bottom: 1px solid rgba(0, 0, 0, 0.04); 
+        }
+        .premium-shadow {
+            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-[#FBFBFD] text-[#1D1D1F] antialiased selection:bg-black selection:text-white">
+
+    <!-- Navigation Épurée -->
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-lg font-bold tracking-tight hover:opacity-70 transition-opacity">Daniel Taleb<span class="text-slate-400 font-normal">.dev</span></a>
+            <div class="hidden md:flex space-x-8 text-xs font-medium tracking-wide uppercase text-slate-500">
+                <a href="#profil" class="hover:text-black transition-colors">Profil</a>
+                <a href="#competences" class="hover:text-black transition-colors">Compétences</a>
+                <a href="#projets" class="hover:text-black transition-colors">Projets</a>
+                <a href="#contact" class="bg-black text-white px-4 py-2 rounded-full hover:bg-slate-800 transition-all tracking-normal normal-case font-semibold">Me contacter</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Profil / Hero -->
+    <section id="profil" class="pt-36 pb-20 md:pt-48 md:pb-28 px-6 max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center min-h-[90vh]">
+        <div class="lg:col-span-8 space-y-6">
+            <div class="inline-flex items-center space-x-2 bg-white px-3 py-1.5 rounded-full border border-slate-200/80 shadow-sm">
+                <span class="flex h-2 w-2 relative">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                </span>
+                <span class="text-[11px] font-bold text-slate-600 tracking-wider uppercase">Recherche Alternance — Septembre 2026</span>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-black leading-[1.1] md:max-w-3xl">
+                Rigueur logique. <br>Conception logicielle & web.
+            </h1>
+            <p class="text-base md:text-lg text-slate-500 max-w-2xl leading-relaxed font-normal">
+                Étudiant en informatique admis au sein du parcours d'excellence <strong>UHA 4.0</strong>. Passionné par l'architecture des données et le développement propre, je combine des compétences en génie logiciel, en intégration web (HTML, CSS, PHP) et en administration systèmes. Disponible pour un rythme d'alternance d'un mois sur deux.
+            </p>
+            <div class="flex flex-wrap gap-4 pt-4">
+                <a href="#projets" class="bg-black text-white px-6 py-3.5 rounded-xl font-semibold text-sm hover:bg-slate-800 transition-all shadow-sm">
+                    Analyser mes réalisations
+                </a>
+                <a href="mailto:daniel.taleb@uha.fr" class="bg-white text-slate-900 border border-slate-200 px-6 py-3.5 rounded-xl font-semibold text-sm hover:bg-slate-50 transition-all shadow-sm">
+                    daniel.taleb@uha.fr
+                </a>
+            </div>
+        </div>
+        <div class="lg:col-span-4 flex justify-center">
+            <div class="relative">
+                <div class="absolute -inset-4 bg-slate-100 rounded-full blur-xl opacity-50"></div>
+                <div class="relative w-56 h-56 md:w-64 md:h-64 rounded-full border-4 border-white shadow-2xl bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center overflow-hidden"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%"><circle cx="100" cy="75" r="38" fill="#94a3b8"/><ellipse cx="100" cy="175" rx="60" ry="45" fill="#94a3b8"/></svg></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tableau de bord des résultats académiques -->
+    <section class="bg-white border-y border-slate-200/60 py-10 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-around items-center gap-8 text-center">
+            <div>
+                <p class="text-xs uppercase tracking-widest text-slate-400 font-bold mb-1">Moyenne Semestre 1</p>
+                <p class="text-3xl font-extrabold text-black">14,92 <span class="text-base font-medium text-slate-400">/ 20</span></p>
+            </div>
+            <div class="hidden sm:block h-8 w-[1px] bg-slate-200"></div>
+            <div>
+                <p class="text-xs uppercase tracking-widest text-slate-400 font-bold mb-1">Moyenne Semestre 2</p>
+                <p class="text-3xl font-extrabold text-black">12,95 <span class="text-base font-medium text-slate-400">/ 20</span></p>
+            </div>
+            <div class="hidden sm:block h-8 w-[1px] bg-slate-200"></div>
+            <div>
+                <p class="text-xs uppercase tracking-widest text-slate-400 font-bold mb-1">Statut d'études</p>
+                <p class="text-base font-bold text-emerald-600 bg-emerald-50 px-4 py-1.5 rounded-full inline-block border border-emerald-100">Admis LP UHA 4.0</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Matrice des Compétences -->
+    <section id="competences" class="py-24 bg-white px-6">
+        <div class="max-w-6xl mx-auto space-y-16">
+            <div class="space-y-2">
+                <p class="text-xs font-bold uppercase tracking-widest text-slate-400">Savoir-faire validé</p>
+                <h2 class="text-3xl font-bold tracking-tight text-black">Mon écosystème technique</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-8 rounded-2xl bg-[#FBFBFD] border border-slate-100 space-y-4 hover:border-slate-300 transition-colors">
+                    <div class="w-10 h-10 rounded-xl bg-black text-white flex items-center justify-center font-mono text-xs font-bold">C++</div>
+                    <h3 class="text-lg font-bold text-black">Génie Logiciel & POO</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Architecture objet rigoureuse, modularité algorithmique et gestion événementielle.</p>
+                    <div class="flex flex-wrap gap-1.5 text-[10px] font-bold text-slate-600">
+                        <span class="bg-white border border-slate-200 px-2 py-0.5 rounded">C++</span>
+                        <span class="bg-white border border-slate-200 px-2 py-0.5 rounded">Qt Creator</span>
+                    </div>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-[#FBFBFD] border border-slate-100 space-y-4 hover:border-slate-300 transition-colors">
+                    <div class="w-10 h-10 rounded-xl bg-black text-white flex items-center justify-center font-mono text-xs font-bold">&lt;/&gt;</div>
+                    <h3 class="text-lg font-bold text-black">Développement Web</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Conception d'interfaces responsives et programmation serveur dynamique connectée aux bases de données.</p>
+                    <div class="flex flex-wrap gap-1.5 text-[10px] font-bold text-slate-600">
+                        <span class="bg-white border border-slate-200 px-2 py-0.5 rounded">HTML5</span>
+                        <span class="bg-white border border-slate-200 px-2 py-0.5 rounded">CSS3</span>
+                        <span class="bg-white border border-slate-200 px-2 py-0.5 rounded">PHP</span>
+                    </div>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-[#FBFBFD] border border-slate-100 space-y-4 hover:border-slate-300 transition-colors">
+                    <div class="w-10 h-10 rounded-xl bg-black text-white flex items-center justify-center font-mono text-xs font-bold">SYS</div>
+                    <h3 class="text-lg font-bold text-black">Infrastructures & Réseaux</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Administration d'environnements virtualisés, routage sécurisé et gestion des sauvegardes.</p>
+                    <div class="flex flex-wrap gap-1.5 text-[10px] font-bold text-slate-600">
+                        <span class="bg-white border border-slate-200 px-2 py-0.5 rounded">Linux</span>
+                        <span class="bg-white border border-slate-200 px-2 py-0.5 rounded">VMware</span>
+                    </div>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-[#FBFBFD] border border-slate-100 space-y-4 hover:border-slate-300 transition-colors">
+                    <div class="w-10 h-10 rounded-xl bg-black text-white flex items-center justify-center font-mono text-xs font-bold">SQL</div>
+                    <h3 class="text-lg font-bold text-black">Données & Modélisation</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Modélisation relationnelle structurée, requêtage complexe et interfaçage d'outils automatisés.</p>
+                    <div class="flex flex-wrap gap-1.5 text-[10px] font-bold text-slate-600">
+                        <span class="bg-white border border-slate-200 px-2 py-0.5 rounded">MCD / MLD</span>
+                        <span class="bg-white border border-slate-200 px-2 py-0.5 rounded">MS Access</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Réalisations -->
+    <section id="projets" class="py-24 bg-[#FBFBFD] px-6 border-t border-slate-200/60">
+        <div class="max-w-6xl mx-auto space-y-20">
+            
+            <div class="space-y-2">
+                <p class="text-xs font-bold uppercase tracking-widest text-slate-400">Dossiers d'ingénierie</p>
+                <h2 class="text-3xl font-bold text-black">Mes 3 réalisations majeures</h2>
+            </div>
+
+            <!-- PROJET 1 : TRAMWAY -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start pt-6">
+                <div class="lg:col-span-7 space-y-4">
+                    <div class="flex items-center space-x-3 text-xs font-bold">
+                        <span class="text-slate-400">L2 Informatique</span>
+                        <span class="h-1 w-1 bg-slate-300 rounded-full"></span>
+                        <span class="px-2.5 py-0.5 bg-black text-white rounded">C++ / Qt Creator</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-black">Simulateur dynamique de gestion de rames</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed font-normal max-w-2xl">
+                        Développement logiciel orienté objet permettant d'émuler et de réguler le trafic sur un réseau de lignes de tramway. L'application intègre une modélisation stricte des flux selon des spécifications d'interface documentées.
+                    </p>
+                </div>
+                <div class="lg:col-span-5">
+                    <div class="p-6 bg-white rounded-2xl border border-slate-200/80 text-xs text-slate-500 space-y-2.5 premium-shadow">
+                        <p class="font-bold text-black uppercase tracking-wider text-[10px]">Logique métier & UI contrôlée :</p>
+                        <ul class="list-disc list-inside space-y-1 text-slate-600">
+                            <li>Contrôles temporels dynamiques de la durée de simulation (10s à 3600s).</li>
+                            <li>Détection synchrone du sens de marche et gestion événementielle.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-slate-200/60">
+
+            <!-- PROJET 2 : GESTION UNIVERSITAIRE MS ACCESS -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <div class="lg:col-span-7 space-y-4">
+                    <div class="flex items-center space-x-3 text-xs font-bold">
+                        <span class="text-slate-400">L2 Informatique</span>
+                        <span class="h-1 w-1 bg-slate-300 rounded-full"></span>
+                        <span class="px-2.5 py-0.5 bg-black text-white rounded">MS Access / SQL / Merise</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-black">Système relationnel de scolarité universitaire</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed font-normal max-w-2xl">
+                        Modélisation de données (Merise) et déploiement d'un outil d'administration pour la gestion des cursus étudiants à la Faculté des Sciences et Techniques (FST).
+                    </p>
+                </div>
+                <div class="lg:col-span-5">
+                    <div class="p-6 bg-white rounded-2xl border border-slate-200/80 text-xs text-slate-500 space-y-2.5 premium-shadow">
+                        <p class="font-bold text-black uppercase tracking-wider text-[10px]">Ingénierie de données appliquée :</p>
+                        <ul class="list-disc list-inside space-y-1 text-slate-600">
+                            <li>Transition ordonnée du MCD vers le MLD pour l'intégrité référentielle.</li>
+                            <li>Centralisation des flux d'écrans via une interface de navigation unifiée.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-slate-200/60">
+
+            <!-- PROJET 3 : BATAILLE NAVALE -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <div class="lg:col-span-7 space-y-4">
+                    <div class="flex items-center space-x-3 text-xs font-bold">
+                        <span class="text-slate-400">L1 Informatique</span>
+                        <span class="h-1 w-1 bg-slate-300 rounded-full"></span>
+                        <span class="px-2.5 py-0.5 bg-black text-white rounded">C++ / Algorithmes</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-black">Moteur algorithmique de Bataille Navale</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed font-normal max-w-2xl">
+                        Conception modulaire d'une simulation de jeu au tour par tour en mode console. L'application repose sur un enchaînement d'écrans guidé par une arborescence logique stricte.
+                    </p>
+                </div>
+                <div class="lg:col-span-5">
+                    <div class="p-6 bg-white rounded-2xl border border-slate-200/80 text-xs text-slate-500 space-y-2.5 premium-shadow">
+                        <p class="font-bold text-black uppercase tracking-wider text-[10px]">Points clés développés :</p>
+                        <ul class="list-disc list-inside space-y-1 text-slate-600">
+                            <li>Structures dynamiques pour moduler la taille des navires (2 à 5 cases).</li>
+                            <li>Gestion des transitions d'écrans avec option de rejouabilité immédiate.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Informations Profil & Atouts -->
+    <section class="py-20 bg-white border-t border-slate-200/60 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
+            <div class="space-y-4">
+                <h3 class="text-xl font-bold text-black">Engagements & Atouts</h3>
+                <ul class="space-y-3.5 text-sm text-slate-500">
+                    <li class="flex items-start space-x-3">
+                        <span class="text-black font-bold text-sm mt-0.5">✓</span>
+                        <span>Membre actif au sein de l'association <strong>MIAGE Mulhouse</strong>.</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <span class="text-black font-bold text-sm mt-0.5">✓</span>
+                        <span>Veille constante en automatisation et architectures logicielles.</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="space-y-4">
+                <h3 class="text-xl font-bold text-black">Profil Linguistique</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs font-semibold text-slate-700">
+                    <div class="bg-[#FBFBFD] p-3 rounded-xl border border-slate-100">Français — Courant / Bilingue</div>
+                    <div class="bg-[#FBFBFD] p-3 rounded-xl border border-slate-100">Arabe — Langue maternelle</div>
+                    <div class="bg-[#FBFBFD] p-3 rounded-xl border border-slate-100">Allemand — Niveau B2 certifié</div>
+                    <div class="bg-[#FBFBFD] p-3 rounded-xl border border-slate-100">Anglais — B1+ Technique</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section id="contact" class="py-24 bg-black text-white px-6 text-center">
+        <div class="max-w-4xl mx-auto space-y-8">
+            <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Prêt à intégrer vos équipes ?</h2>
+            <p class="text-slate-400 text-sm max-w-lg mx-auto leading-relaxed">
+                Je recherche une structure d'accueil en alternance à partir de septembre 2026 pour mettre mes compétences en développement logiciel et web au service de vos projets.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 pt-4">
+                <a href="mailto:daniel.taleb@uha.fr" class="bg-white text-black px-7 py-3.5 rounded-xl font-bold text-xs hover:bg-slate-200 transition-colors">
+                    daniel.taleb@uha.fr
+                </a>
+                <a href="https://linkedin.com/in/daniel-taleb-0a25b619b" target="_blank" class="border border-slate-800 px-7 py-3.5 rounded-xl font-bold text-xs hover:bg-neutral-900 transition-colors">
+                    Mon profil LinkedIn
+                </a>
+            </div>
+            <div class="pt-16 border-t border-neutral-900 text-[11px] text-slate-600">
+                © 2026 Daniel Taleb. Intégration optimisée pour le cursus Licence Pro UHA 4.0.
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
